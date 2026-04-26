@@ -7,19 +7,19 @@ const services = [
   {
     title: 'Data Analytics',
     description: 'Transform raw data into actionable insights. I specialize in data cleaning, visualization, forecasting, and building dashboards that drive business decisions.',
-    icon: 'https://via.placeholder.com/64x64/0F172A/FFFFFF?text=📊',
+    image: '/picture/data-analytics.jpg',
     cta: 'Learn More',
   },
   {
     title: 'Web Development',
     description: 'Create fast, responsive, and user-friendly websites. From business sites to landing pages, I deliver modern web solutions using the latest technologies.',
-    icon: 'https://via.placeholder.com/64x64/3B82F6/FFFFFF?text=💻',
+    image: '/picture/web-development.jpg',
     cta: 'Learn More',
   },
   {
     title: 'Digital Marketing',
     description: 'Boost your online presence with strategic marketing. I handle social media, ads, SEO, and lead generation to increase your revenue.',
-    icon: 'https://via.placeholder.com/64x64/22C55E/FFFFFF?text=📈',
+    image: '/picture/digital-marketing.jpg',
     cta: 'Learn More',
   },
 ];
@@ -54,23 +54,25 @@ export default function Services() {
               className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
               whileHover={{ y: -5 }}
             >
-              <div className="mb-4 flex justify-center">
+              <div className="h-48 overflow-hidden">
                 <Image
-                  src={service.icon}
+                  src={service.image}
                   alt={service.title}
-                  width={64}
-                  height={64}
-                  className="rounded-lg"
+                  width={400}
+                  height={200}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform"
                 />
               </div>
-              <h3 className="text-2xl font-bold text-primary mb-4">{service.title}</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
-              <motion.button
-                className="text-accent font-semibold hover:text-blue-700 transition-colors"
-                whileHover={{ x: 5 }}
-              >
-                {service.cta} →
-              </motion.button>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-primary mb-4">{service.title}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                <motion.button
+                  className="text-accent font-semibold hover:text-blue-700 transition-colors"
+                  whileHover={{ x: 5 }}
+                >
+                  {service.cta} →
+                </motion.button>
+              </div>
             </motion.div>
           ))}
         </div>

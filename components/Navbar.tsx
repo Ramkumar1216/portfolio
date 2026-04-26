@@ -32,6 +32,9 @@ export default function Navbar() {
               <a href="#about" className="text-gray-700 hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 About
               </a>
+              <a href="#why-ramkumar" className="text-gray-700 hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                Why Me
+              </a>
               <a href="#contact" className="text-gray-700 hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 Contact
               </a>
@@ -51,6 +54,9 @@ export default function Navbar() {
               </a>
               <a href="#about" className="text-gray-700 hover:text-accent px-3 py-2 rounded-md text-sm font-medium">
                 About
+              </a>
+              <a href="#why-ramkumar" className="text-gray-700 hover:text-accent px-3 py-2 rounded-md text-sm font-medium">
+                Why Me
               </a>
               <a href="#contact" className="text-gray-700 hover:text-accent px-3 py-2 rounded-md text-sm font-medium">
                 Contact
