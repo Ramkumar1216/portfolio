@@ -28,6 +28,14 @@ const projects = [
     liveDemo: '#',
     github: '#',
   },
+  {
+    title: 'My Portfolio Website',
+    description: 'Problem: needed a professional portfolio to showcase services. Action: built a modern, responsive portfolio site with smooth animations. Result: improved brand credibility and increased client inquiries.',
+    image: '/picture/portfolio-preview.png',
+    tools: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    liveDemo: 'https://ramkumarp.vercel.app/',
+    github: '#',
+  },
 ];
 
 export default function Projects() {
@@ -59,7 +67,7 @@ export default function Projects() {
               viewport={{ once: true }}
               className="bg-gray-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-48 overflow-hidden relative group">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -67,6 +75,17 @@ export default function Projects() {
                   height={200}
                   className="w-full h-full object-cover hover:scale-105 transition-transform"
                 />
+                {/* Overlay with View Project button */}
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <a
+                    href={project.liveDemo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-2 bg-white text-primary font-semibold rounded-lg hover:bg-accent hover:text-white transition-colors"
+                  >
+                    View Project →
+                  </a>
+                </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-primary mb-2">{project.title}</h3>
@@ -77,6 +96,28 @@ export default function Projects() {
                       {tool}
                     </span>
                   ))}
+                </div>
+                <div className="flex gap-3">
+                  {project.liveDemo && project.liveDemo !== '#' && (
+                    <a
+                      href={project.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+                    >
+                      Live Demo
+                    </a>
+                  )}
+                  {project.github && project.github !== '#' && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-4 py-2 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors text-sm font-medium"
+                    >
+                      GitHub
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
