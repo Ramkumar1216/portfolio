@@ -26,7 +26,7 @@ export default function Hero() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Book Free Consultation
+                Book Your Growth Call
               </motion.a>
               <motion.a
                 href="#projects"
@@ -34,7 +34,7 @@ export default function Hero() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                View My Work
+                See Case Studies
               </motion.a>
             </div>
           </motion.div>
@@ -45,7 +45,7 @@ export default function Hero() {
             className="flex justify-center"
           >
             <Image
-              src="https://via.placeholder.com/400x400/3B82F6/FFFFFF?text=Hero+Illustration"
+              src="/picture/profile.jpeg"
               alt="Professional illustration"
               width={400}
               height={400}

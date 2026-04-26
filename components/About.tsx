@@ -15,13 +15,13 @@ export default function About() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              About Me
+              Growth Work for Business Owners Who Need Leads and Revenue
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
-              Hi, I'm Ramkumar, a passionate data analyst, web developer, and digital marketer with over 5 years of experience helping businesses leverage technology and data to achieve their goals.
+              I help owners and founders stop wasting time on guesswork. I turn data into clear actions, slow websites into conversion engines, and campaigns into steady qualified leads.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              I help businesses make smarter decisions using data and technology. Whether it's building insightful dashboards, creating engaging websites, or optimizing marketing campaigns, I deliver solutions that drive real results.
+              If you want a premium growth partner who focuses on real business impact — more leads, higher sales, and better ROI — this is the work I do every week.
             </p>
           </motion.div>
           <motion.div
@@ -32,7 +32,7 @@ export default function About() {
             className="flex justify-center"
           >
             <Image
-              src="https://via.placeholder.com/300x300/0F172A/FFFFFF?text=Profile+Photo"
+              src="/picture/profile.jpeg"
               alt="Ramkumar - Data Analyst, Web Developer & Digital Marketer"
               width={300}
               height={300}

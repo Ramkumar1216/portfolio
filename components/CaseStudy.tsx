@@ -14,10 +14,10 @@ export default function CaseStudy() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Case Study: Customer Sales Dashboard
+            Case Study: Sales Dashboard That Scaled Revenue Fast
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            How I helped a retail business increase sales by 35% through data-driven insights.
+            A strong retail client went from messy sales reports to a single dashboard that created quick wins and measurable profit.
           </p>
         </motion.div>
 
@@ -29,9 +29,9 @@ export default function CaseStudy() {
             viewport={{ once: true }}
             className="bg-white p-8 rounded-xl shadow-lg"
           >
-            <h3 className="text-2xl font-bold text-primary mb-4">The Problem</h3>
+            <h3 className="text-2xl font-bold text-primary mb-4">Problem</h3>
             <p className="text-gray-600 leading-relaxed">
-              The client was struggling with disorganized sales data across multiple channels. They lacked visibility into customer behavior, leading to missed opportunities and inefficient inventory management.
+              The business was losing deals because sales data was split across tools, and leaders were making decisions from stale reports.
             </p>
           </motion.div>
 
@@ -42,9 +42,9 @@ export default function CaseStudy() {
             viewport={{ once: true }}
             className="bg-white p-8 rounded-xl shadow-lg"
           >
-            <h3 className="text-2xl font-bold text-primary mb-4">The Solution</h3>
+            <h3 className="text-2xl font-bold text-primary mb-4">Action</h3>
             <p className="text-gray-600 leading-relaxed">
-              I built a comprehensive dashboard using Python for data processing, SQL for database management, and Power BI for visualization. The solution included real-time data syncing and predictive analytics.
+              I built a live analytics dashboard with sales forecasting, channel performance, and lead scoring so the team could act on the right opportunities immediately.
             </p>
           </motion.div>
 
@@ -55,9 +55,9 @@ export default function CaseStudy() {
             viewport={{ once: true }}
             className="bg-white p-8 rounded-xl shadow-lg"
           >
-            <h3 className="text-2xl font-bold text-primary mb-4">The Result</h3>
+            <h3 className="text-2xl font-bold text-primary mb-4">Results</h3>
             <p className="text-gray-600 leading-relaxed">
-              Within 3 months, the client saw a 35% increase in sales, 50% reduction in inventory costs, and improved decision-making with actionable insights available 24/7.
+              In 90 days the client saw +35% revenue, 50% lower inventory costs, and the team gained 10 hours per week back from reporting.
             </p>
           </motion.div>
         </div>

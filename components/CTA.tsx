@@ -13,10 +13,10 @@ export default function CTA() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Grow Your Business?
+            Ready to stop leaving revenue on the table?
           </h2>
           <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-            Let's work together to turn your data into profit. Book a free consultation and discover how I can help you achieve your goals.
+            The faster you act, the sooner you get better leads, higher sales, and less wasted spend. My calendar fills quickly — book now before the next growth window closes.
           </p>
           <motion.a
             href="#contact"
@@ -24,7 +24,7 @@ export default function CTA() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Start Free Consultation
+            Book Your Growth Call
           </motion.a>
         </motion.div>
       </div>

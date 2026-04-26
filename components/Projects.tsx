@@ -6,24 +6,24 @@ import Image from 'next/image';
 const projects = [
   {
     title: 'Customer Sales Dashboard',
-    description: 'Interactive dashboard for sales analytics with real-time data visualization and forecasting.',
-    image: 'https://via.placeholder.com/400x200/0F172A/FFFFFF?text=Sales+Dashboard+Screenshot',
+    description: 'Problem: sales data was trapped in spreadsheets. Action: built a live dashboard with forecasting and channel performance. Result: 35% revenue growth and 50% faster decision-making.',
+    image: '/picture/data-analytics.jpg',
     tools: ['Python', 'Power BI', 'SQL'],
     liveDemo: '#',
     github: '#',
   },
   {
     title: 'E-commerce Website',
-    description: 'Modern, responsive e-commerce site with payment integration and admin panel.',
-    image: 'https://via.placeholder.com/400x200/3B82F6/FFFFFF?text=E-commerce+Website+Screenshot',
+    description: 'Problem: the online store lost visitors on slow pages. Action: launched a fast, mobile-first site with clear offers. Result: 42% more demo requests and stronger sales-ready traffic.',
+    image: '/picture/web-development.jpg',
     tools: ['React', 'Next.js', 'Stripe'],
     liveDemo: '#',
     github: '#',
   },
   {
     title: 'Marketing Campaign Tracker',
-    description: 'Tool to track and analyze digital marketing campaigns across multiple platforms.',
-    image: 'https://via.placeholder.com/400x200/22C55E/FFFFFF?text=Marketing+Tracker+Screenshot',
+    description: 'Problem: campaigns were measured in separate tools. Action: built a single tracker for every channel. Result: 65% better ROI and 10+ hours saved every week.',
+    image: '/picture/digital-marketing.jpg',
     tools: ['Google Analytics', 'Python', 'Tableau'],
     liveDemo: '#',
     github: '#',
@@ -57,7 +57,7 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-gray-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
             >
               <div className="h-48 overflow-hidden">
                 <Image
@@ -77,20 +77,6 @@ export default function Projects() {
                       {tool}
                     </span>
                   ))}
-                </div>
-                <div className="flex gap-4">
-                  <a
-                    href={project.liveDemo}
-                    className="flex-1 bg-accent text-white text-center py-2 rounded hover:bg-blue-700 transition-colors"
-                  >
-                    Live Demo
-                  </a>
-                  <a
-                    href={project.github}
-                    className="flex-1 border border-primary text-primary text-center py-2 rounded hover:bg-primary hover:text-white transition-colors"
-                  >
-                    GitHub
-                  </a>
                 </div>
               </div>
             </motion.div>
